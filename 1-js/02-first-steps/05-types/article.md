@@ -8,8 +8,8 @@ Wir können jeden beliebigen Typ in eine Variable setzen. Zum Beispiel kann eine
 
 ```js
 // kein Fehler
-let message = "Hallo";
-message = 123456;
+let nachricht = "Hallo";
+nachricht = 123456;
 ```
 
 Programmiersprachen, die solche Eigenschaften ermöglichen, wie z.B. JavaScript, werden als "dynamisch typisiert" bezeichnet, d.h. es gibt zwar Datentypen, aber die Variablen sind nicht an einen dieser Typen gebunden.
@@ -116,16 +116,16 @@ Da `BigInt`-Zahlen selten benötigt werden, behandeln wir sie hier nicht, sonder
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-```smart header="Compatability issues"
+```smart header="Kompatibilitätsprobleme"
 Im Moment wird `BigInt` in Firefox/Chrome/Edge unterstützt, aber nicht in Safari/IE.
 =======
 
-```smart header="Compatibility issues"
-Right now, `BigInt` is supported in Firefox/Chrome/Edge/Safari, but not in IE.
+```smart header="Kompatibilitätsprobleme"
+Derzeit wird `BigInt` in Firefox/Chrome/Edge/Safari unterstützt, jedoch nicht in IE.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 ```
 
-You can check [*MDN* BigInt compatibility table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#Browser_compatibility) to know which versions of a browser are supported.
+Sie können in der [*MDN* BigInt-Kompatibilitätstabelle](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt#Browser_compatibility) nachsehen, welche Browser-Versionen unterstützt werden.
 
 =======
 >>>>>>> b258d7d5b635c88228f7556e14fbe5e5ca7f736d
@@ -174,7 +174,7 @@ In einigen Sprachen gibt es einen speziellen "Zeichen"-Typ für ein einzelnes Ze
 <<<<<<< HEAD
 In JavaScript gibt es so einen Typ nicht. Es gibt nur einen Typ: `string`. Eine Zeichenfolge kann aus nur einem oder mehreren Zeichen bestehen.
 =======
-In JavaScript, there is no such type. There's only one type: `string`. A string may consist of zero characters (be empty), one character or many of them.
+In JavaScript gibt es keinen solchen Typ. Es gibt nur einen Typ: `string`. Eine Zeichenfolge kann aus null Zeichen bestehen (leer sein), aus einem Zeichen oder aus vielen Zeichen.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 ```
 
@@ -187,16 +187,16 @@ Dieser Typ wird häufig zum Speichern von Ja/Nein-Werten verwendet: `true` bedeu
 Zum Beispiel:
 
 ```js
-let nameFieldChecked = true; // ja, Feld (Name) ist markiert
-let ageFieldChecked = false; // nein, Feld (Alter) ist nicht markiert
+let nameFeldmarkiert = true; // ja, Feld (Name) ist markiert
+let alterFeldmarkiert = false; // nein, Feld (Alter) ist nicht markiert
 ```
 
 Boolesche Werte ergeben sich auch aus Vergleichen:
 
 ```js run
-let isGreater = 4 > 1;
+let istgroeßer = 4 > 1;
 
-alert( isGreater ); // true (das Vergleichsergebnis ist "richtig")
+alert( istgeroeßer ); // true (das Vergleichsergebnis ist "richtig")
 ```
 
 Wir werden uns im Kapitel <info:logical-operators> eingehender mit loglischen Werten befassen.
@@ -208,14 +208,14 @@ Der spezielle `null`-Wert gehört zu keinem der oben beschriebenen Typen.
 Er bildet einen eigenen Typ, der nur den Wert `null` enthält:
 
 ```js
-let age = null;
+let alter = null;
 ```
 
 In JavaScript ist `null` kein "Verweis auf ein nicht vorhandenes Objekt" oder ein "Nullzeiger" wie in einigen anderen Sprachen.
 
 Es ist nur ein spezieller Wert, der "nichts", "leer" oder "Wert unbekannt" darstellt.
 
-Der oben genannte Code besagt, dass `age` unbekannt ist.
+Der oben genannte Code besagt, dass `alter` unbekannt ist.
 
 ## Der Wert "undefined"
 Der spezielle Wert `undefined` steht ebenfalls abseits. Er bildet einen eigenen Typ, genau wie `null`.
@@ -225,20 +225,20 @@ Die Bedeutung von `undefined` ist "Wert ist nicht zugewiesen".
 Wenn eine Variable deklariert, aber nicht zugewiesen ist, ist ihr Wert `undefined`:
 
 ```js run
-let age;
+let alter;
 
-alert(age); // zeigt "undefined"
+alert(alter); // zeigt "undefined"
 ```
 
 Technisch gesehen ist es möglich, jeder Variablen ein `undefined` zuzuweisen:
 
 ```js run
-let age = 100;
+let alter = 100;
 
-// change the value to undefined
-age = undefined;
+// Ändern Sie den Wert in "undefined".
+alter = undefined;
 
-alert(age); // "undefined"
+alert(alter); // "undefined"
 ```
 
 ...Aber wir raten davon ab, das zu tun. Normalerweise verwendet man `null`, um einer Variablen einen "leeren" oder "unbekannten" Wert zuzuweisen, während `undefined` als Standard-Anfangswert für nicht zugewiesene Werte reserviert ist.
@@ -261,7 +261,7 @@ Der Operator `typeof` gibt den Typ des Arguments zurück. Dies ist nützlich, we
 <<<<<<< HEAD
 Es werden zwei Syntaxformen unterstützt:
 =======
-The `typeof` operator returns the type of the operand. It's useful when we want to process values of different types differently or just want to do a quick check.
+Der Operator `typeof` gibt den Typ des Operanden zurück. Er ist nützlich, wenn wir Werte unterschiedlicher Typen unterschiedlich verarbeiten oder nur eine schnelle Überprüfung durchführen möchten.
 >>>>>>> d694e895efe89922a109702085b6ca1efeffea10
 
 1. Als Operator: `typeof x`.
@@ -271,7 +271,7 @@ Mit anderen Worten, es funktioniert mit oder ohne Klammern. Das Ergebnis ist das
 
 Der Aufruf von `typeof x` gibt einen String mit dem Typ zurück:
 =======
-A call to `typeof x` returns a string with the type name:
+Ein Aufruf von „typeof x“ gibt eine Zeichenfolge mit dem Typnamen zurück:
 >>>>>>> 29216730a877be28d0a75a459676db6e7f5c4834
 
 ```js
@@ -309,21 +309,21 @@ Die letzten drei Zeilen bedürfen möglicherweise einer zusätzlichen Erläuteru
 
 ## Zusammenfassung
 =======
-1. `Math` is a built-in object that provides mathematical operations. We will learn it in the chapter <info:number>. Here, it serves just as an example of an object.
-2. The result of `typeof null` is `"object"`. That's an officially recognized error in `typeof`, coming from very early days of JavaScript and kept for compatibility. Definitely, `null` is not an object. It is a special value with a separate type of its own. The behavior of `typeof` is wrong here.
-3. The result of `typeof alert` is `"function"`, because `alert` is a function. We'll study functions in the next chapters where we'll also see that there's no special "function" type in JavaScript. Functions belong to the object type. But `typeof` treats them differently, returning `"function"`. That also comes from the early days of JavaScript. Technically, such behavior isn't correct, but can be convenient in practice.
+1. `Math` ist ein integriertes Objekt, das mathematische Operationen bereitstellt. Wir werden es im Kapitel <info:number> kennenlernen. Hier dient es lediglich als Beispiel für ein Objekt.
+2. Das Ergebnis von „typeof null“ ist „object“. Das ist ein offiziell anerkannter Fehler in „typeof“, der aus den Anfängen von JavaScript stammt und aus Kompatibilitätsgründen beibehalten wurde. „null“ ist definitiv kein Objekt. Es ist ein Sonderwert mit einem eigenen Typ. Das Verhalten von „typeof“ ist hier falsch.
+3. Das Ergebnis von „typeof alert“ ist „function“, da „alert“ eine Funktion ist. Wir werden Funktionen in den nächsten Kapiteln behandeln, wo wir auch sehen werden, dass es in JavaScript keinen speziellen Typ „function” gibt. Funktionen gehören zum Objekttyp. Aber `typeof` behandelt sie anders und gibt `„function”` zurück. Auch das stammt aus den Anfängen von JavaScript. Technisch gesehen ist dieses Verhalten nicht korrekt, kann aber in der Praxis praktisch sein.
 
-```smart header="The `typeof(x)` syntax"
-You may also come across another syntax: `typeof(x)`. It's the same as `typeof x`.
+```smart header="Die Syntax `typeof(x)`"
+Möglicherweise stoßen Sie auch auf eine andere Syntax: `typeof(x)`. Diese entspricht `typeof x`.
 
-To put it clear: `typeof` is an operator, not a function. The parentheses here aren't a part of `typeof`. It's the kind of parentheses used for mathematical grouping.
+Um es klar zu sagen: `typeof` ist ein Operator, keine Funktion. Die Klammern sind hier nicht Teil von `typeof`. Es handelt sich um Klammern, wie sie für mathematische Gruppierungen verwendet werden.
 
-Usually, such parentheses contain a mathematical expression, such as `(2 + 2)`, but here they contain only one argument `(x)`. Syntactically, they allow to avoid a space between the `typeof` operator and its argument, and some people like it.
+Normalerweise enthalten solche Klammern einen mathematischen Ausdruck, wie z. B. `(2 + 2)`, aber hier enthalten sie nur ein Argument `(x)`. Syntaktisch gesehen ermöglichen sie es, ein Leerzeichen zwischen dem Operator `typeof` und seinem Argument zu vermeiden, was manche Leute mögen.
 
-Some people prefer `typeof(x)`, although the `typeof x` syntax is much more common.
+Manche Leute bevorzugen `typeof(x)`, obwohl die Syntax `typeof x` viel gebräuchlicher ist.
 ```
 
-## Summary
+## Zusammenfassung
 <<<<<<< HEAD
 >>>>>>> 29216730a877be28d0a75a459676db6e7f5c4834
 
