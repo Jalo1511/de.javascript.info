@@ -3,7 +3,7 @@
 Das ist einfach:
 
 ```js
-let ourPlanetName = "Earth";
+let unserPlanetName = "Earth";
 ```
 
 <<<<<<< HEAD
@@ -15,7 +15,7 @@ Note, we could use a shorter name `planet`, but it might not be obvious what pla
 ## Der Name des aktuellen Besuchers
 
 ```js
-let currentUserName = "John";
+let aktuellerUserName = "John";
 ```
 
 Auch hier könnten wir das auf `userName` kürzen, wenn wir sicher wissen, dass der Benutzer aktuell ist.
