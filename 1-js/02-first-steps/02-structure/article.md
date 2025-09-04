@@ -49,7 +49,7 @@ alert(3 +
 <<<<<<< HEAD
 Der Code gibt `6` aus, da JavaScript hier keine Semikolons einfügt. Es ist intuitiv klar, dass, wenn die Zeile mit einem Pluszeichen `"+"` endet, es sich um einen "unvollständigen Ausdruck" handelt, sodass das Semikolon nicht erforderlich ist. Und in diesem Fall funktioniert das wie vorgesehen.
 =======
-The code outputs `6` because JavaScript does not insert semicolons here. It is intuitively obvious that if the line ends with a plus `"+"`, then it is an "incomplete expression", so a semicolon there would be incorrect. And in this case, that works as intended.
+Der Code gibt `6` aus, da JavaScript hier keine Semikolons einfügt. Es ist intuitiv klar, dass, wenn die Zeile mit einem Pluszeichen `"+"` endet, es sich um einen "unvollständigen Ausdruck" handelt, sodass das Semikolon nicht erforderlich ist. Und in diesem Fall funktioniert das wie vorgesehen.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 
 **Es gibt jedoch Situationen, in denen JavaScript ein Semikolon nicht annimmt, wenn es wirklich benötigt wird.**
