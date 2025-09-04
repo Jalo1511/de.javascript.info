@@ -60,7 +60,7 @@ Fehler, die in solchen Fällen auftreten, sind schwer zu finden und zu beheben.
 Wenn du ein konkretes Beispiel für einen solchen Fehler sehen möchten, lies den folgenden Code:
 
 ```js run
-alert("Hello");
+alert("Hallo");
 
 [1, 2].forEach(alert);
 ```
@@ -73,12 +73,12 @@ Fügen wir nun vor dem Code einen `alert` ein und beenden ihn *nicht* mit einem 
 ```js run no-beautify
 alert("Es wird ein Fehler auftreten")
 =======
-No need to think about the meaning of the brackets `[]` and `forEach` yet. We'll study them later. For now, just remember the result of running the code: it shows `Hello`, then `1`, then `2`.
+Sie müssen sich noch keine Gedanken über die Bedeutung der Klammern `[]` und `forEach` machen. Wir werden uns später damit befassen. Merken Sie sich vorerst nur das Ergebnis der Ausführung des Codes: Es wird `Hello`, dann `1` und dann `2` angezeigt.
 
-Now let's remove the semicolon after the `alert`:
+Entfernen wir nun das Semikolon nach dem `alert`:
 
 ```js run no-beautify
-alert("Hello")
+alert("Hallo")
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 
 [1, 2].forEach(alert);
@@ -107,21 +107,23 @@ alert("Es wird ein Fehler auftreten")[1, 2].forEach(alert)
 
 Aber es sollten zwei getrennte Anweisungen sein, nicht eine. Eine solche Verschmelzung ist in diesem Fall einfach falsch, daher der Fehler. Dies kann auch in anderen Situationen auftreten.
 =======
-The difference compared to the code above is only one character: the semicolon at the end of the first line is gone.
+Der Unterschied zum obigen Code besteht nur in einem Zeichen: Das Semikolon am Ende der ersten Zeile fehlt.
 
-If we run this code, only the first `Hello` shows (and there's an error, you may need to open the console to see it). There are no numbers any more.
+Wenn wir diesen Code ausführen, wird nur das erste „Hello” angezeigt (und es gibt einen Fehler, den Sie möglicherweise in der Konsole sehen können). Es gibt keine Zahlen mehr.
 
-That's because JavaScript does not assume a semicolon before square brackets `[...]`. So, the code in the last example is treated as a single statement.
+Das liegt daran, dass JavaScript kein Semikolon vor eckigen Klammern „[...]” erwartet. Daher wird der Code im letzten Beispiel als einzelne Anweisung behandelt.
 
-Here's how the engine sees it:
+So sieht es die Engine:
+
+Übersetzt mit DeepL.com (kostenlose Version)
 
 ```js run no-beautify
-alert("Hello")[1, 2].forEach(alert);
+alert("Hallo")[1, 2].forEach(alert);
 ```
 
-Looks weird, right? Such merging in this case is just wrong. We need to put a semicolon after `alert` for the code to work correctly.
+Sieht seltsam aus, oder? Eine solche Zusammenführung ist in diesem Fall einfach falsch. Wir müssen nach „alert“ ein Semikolon setzen, damit der Code korrekt funktioniert.
 
-This can happen in other situations also.
+Dies kann auch in anderen Situationen vorkommen.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 ````
 
@@ -173,7 +175,7 @@ alert('Welt');
 In den meisten Editoren kannst du eine Codezeile auskommentieren, indem du die Tastenkombination `key:Strg+/` für einen einzeiligen Kommentar und die Tastenkombination `key:Strg+Umschalt+/` für mehrzeilige Kommentare drückst (wähle ein Stück Code aus und drücke die Tastenkombination). Für Mac versuche "key:Cmd" anstelle von "key:Strg" und `key:Option` statt `key:Umschalt`.
 =======
 ```smart header="Use hotkeys!"
-In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`.
+In den meisten Editoren kann eine Codezeile durch Drücken der Tastenkombination `Strg+/` für einen einzeiligen Kommentar und einer Kombination wie `Strg+Umschalt+/` für mehrzeilige Kommentare auskommentiert werden (wählen Sie einen Codeausschnitt aus und drücken Sie die Tastenkombination). Bei Mac verwenden Sie statt `Strg` die Taste `Cmd` und statt `Umschalt` die Taste `Option`.
 >>>>>>> 23ffde780605b3418101850a61d9496c3d7f927c
 ```
 
