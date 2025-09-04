@@ -3,7 +3,7 @@
 Das ist einfach:
 
 ```js
-let unserPlanetName = "Earth";
+let unserPlanetName = "Erde";
 ```
 
 <<<<<<< HEAD
