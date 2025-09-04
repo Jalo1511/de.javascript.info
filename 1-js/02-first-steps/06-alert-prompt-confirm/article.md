@@ -7,7 +7,7 @@ Da wir den Browser als unsere Demo-Umgebung verwenden, wollen wir einige Funktio
 <<<<<<< HEAD
 Diese haben wir bereits gesehen. Es zeigt eine Meldung an und wartet darauf, dass der Benutzer "OK" drückt.
 =======
-This one we've seen already. It shows a message and waits for the user to press "OK".
+Das haben wir bereits gesehen. Es zeigt eine Meldung an und wartet darauf, dass der Benutzer auf „OK“ drückt.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 
 Zum Beispiel:
@@ -38,8 +38,8 @@ Es wir ein modales Fenster mit einer Meldung angezeigt, ein Eingabefeld für den
 ```smart header="Eckige Klammer in der Syntax `[...]`"
 Die eckigen Klammern um `default` in der obigen Syntax bedeuten, dass der Parameter optional, nicht erforderlich ist.
 =======
-```smart header="The square brackets in syntax `[...]`"
-The square brackets around `default` in the syntax above denote that the parameter is optional, not required.
+```smart header="Eckige Klammer in der Syntax `[...]`"
+Die eckigen Klammern um „default“ in der obigen Syntax bedeuten, dass der Parameter optional ist und nicht erforderlich ist.
 >>>>>>> a82915575863d33db6b892087975f84dea6cb425
 ```
 
@@ -50,7 +50,7 @@ Der Aufruf von `prompt` gibt den Text des Eingabefelds zurück. Wenn die Eingabe
 Zum Beispiel:
 
 ```js run
-let age = prompt('Wie alt bist du?', 100);
+let alter = prompt('Wie alt bist du?', 100);
 
 alert(`Du bist ${age} Jahre alt!`); // Du bist 100 Jahre alt!
 ```
@@ -86,9 +86,9 @@ Der Rückgabewert ist `true` wenn OK gedrückt wurde, andernfalls `false`.
 Zum Beispiel:
 
 ```js run
-let isBoss = confirm("Bist du der Chef?");
+let istChef = confirm("Bist du der Chef?");
 
-alert( isBoss ); // true, falls OK gedrückt wurde
+alert( istChef ); // true, falls OK gedrückt wurde
 ```
 
 ## Zusammenfassung
